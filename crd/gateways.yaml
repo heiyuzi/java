@@ -6,9 +6,9 @@ metadata:
     gateway.networking.k8s.io/bundle-version: v1.2.0-dev
     gateway.networking.k8s.io/channel: standard
   creationTimestamp: null
-  name: gateways.gateway.networking.k8s.io
+  name: gateways.gateway.networking.kubernetesIo
 spec:
-  group: gateway.networking.k8s.io
+  group: gateway.networking.kubernetesIo
   names:
     categories:
     - gateway-api
