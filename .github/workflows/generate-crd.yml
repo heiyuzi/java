@@ -5,7 +5,7 @@ on:
       crds:
         type: string
         required: true
-        description: 'https://raw.githubusercontent.com/heiyuzi/java/master/crd/gateways.yaml'
+        description: 'https://github.com/heiyuzi/java/blob/master/crd/httproutes.yaml'
       generatingJavaPackage:
         type: string
         required: true
