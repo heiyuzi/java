@@ -220,14 +220,8 @@ spec:
                     a parent of this resource (usually a route). There are two kinds of parent resources
                     with "Core" support:
 
-
-                    * Gateway (Gateway conformance profile)
-                    * Service (Mesh conformance profile, ClusterIP Services only)
-
-
                     This API may be extended in the future to support additional kinds of parent
                     resources.
-
 
                     The API object must be valid in the cluster; the Group and Kind must
                     be registered in the cluster for this reference to be valid.
