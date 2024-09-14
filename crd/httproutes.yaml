@@ -6,9 +6,9 @@ metadata:
     gateway.networking.k8s.io/bundle-version: v1.2.0-dev
     gateway.networking.k8s.io/channel: standard
   creationTimestamp: null
-  name: httproutes.gateway.networking.http-routes
+  name: httproutes.gateway.networking.k8s-io
 spec:
-  group: gateway.networking.http-routes
+  group: gateway.networking.k8s-io
   names:
     categories:
     - gateway-api
@@ -220,14 +220,20 @@ spec:
                     a parent of this resource (usually a route). There are two kinds of parent resources
                     with "Core" support:
 
+
+                    * Gateway (Gateway conformance profile)
+                    * Service (Mesh conformance profile, ClusterIP Services only)
+
+
                     This API may be extended in the future to support additional kinds of parent
                     resources.
+
 
                     The API object must be valid in the cluster; the Group and Kind must
                     be registered in the cluster for this reference to be valid.
                   properties:
                     group:
-                      default: gateway.networking.http-routes
+                      default: gateway.networking.k8s.io
                       description: |-
                         Group is the group of the referent.
                         When unspecified, "gateway.networking.k8s.io" is inferred.
